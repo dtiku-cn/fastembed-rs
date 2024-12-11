@@ -34,8 +34,8 @@ serde_json = { version = "1" }
 tokenizers = { version = "0.19", default-features = false, features = ["onig"] }
 
 [features]
-default = ["ort-download-binaries"]
-online = ["hf-hub/online"]
+default = ["ort-download-binaries", "online"]
+online = []
 ort-download-binaries = ["ort/download-binaries"]
 ort-load-dynamic = ["ort/load-dynamic"]
 # This feature does not change any code, but is used to limit tests if
