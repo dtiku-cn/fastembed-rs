@@ -34,7 +34,7 @@ serde_json = { version = "1" }
 tokenizers = { version = "0.19", default-features = false, features = ["onig"] }
 
 [features]
-default = ["ort-download-binaries", "online"]
+default = ["ort-download-binaries"]
 online = ["hf-hub/online"]
 ort-download-binaries = ["ort/download-binaries"]
 ort-load-dynamic = ["ort/load-dynamic"]
