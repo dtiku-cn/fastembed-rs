@@ -35,7 +35,7 @@ tokenizers = { version = "0.19", default-features = false, features = ["onig"] }
 
 [features]
 default = ["ort-download-binaries", "online"]
-online = ["hf-hub/tokio","hf-hub/ureq"]
+online = ["hf-hub/ureq"]
 ort-download-binaries = ["ort/download-binaries"]
 ort-load-dynamic = ["ort/load-dynamic"]
 # This feature does not change any code, but is used to limit tests if
